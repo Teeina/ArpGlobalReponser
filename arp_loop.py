@@ -2,7 +2,7 @@
 
 from scapy.all import *
 from argparse import ArgumentParser
-from sys import argv
+
 
 import os
 import socket
