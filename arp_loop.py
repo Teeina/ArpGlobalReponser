@@ -66,7 +66,6 @@ def features(configs):
     if configs['mapping']==True:
         get_up_hosts()
     elif configs['num']!=0:
-        print configs['num']
         send_pkts(configs)
     else:
         enable_packet_forward()
@@ -165,7 +164,6 @@ def enable_http_redirection():
 def main():
     try:
         configs = set_configs()
-        print configs['num']
         features(configs)
     except:
         KeyboardInterrupt
